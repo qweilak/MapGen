@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07440364, g: 0.14562304, b: 0.5377358, a: 0}
+  m_BackGroundColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -237,15 +237,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: -1611743270, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 1892168915, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 454340091, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 407878418, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 1663647137, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -2057703073, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -731835706, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 893114252, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -1050599017, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: -1292465219, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: -204754511, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: 889949448, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: 1381443329, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: -1430820830, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: 593596822, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: -275653300, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: -629029586, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  - {fileID: 842297717, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
 --- !u!4 &1285093612
 Transform:
   m_ObjectHideFlags: 0
