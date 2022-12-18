@@ -28,11 +28,11 @@ namespace MapGenerator
         }
 
         /// <summary>
-        /// SpawnTile instantiates a new Tile from parameter's position with offset.
-        /// The 0 position of the grid will be set at the bottom left screen's corner.
+        /// SpawnTile instantiates a new Tile related to the bottom left screen's corner.
+        /// <para name="position">• vector3 position: sets position of the tile.</para>
+        /// <para name="value">• float value: set the grey scale from 0 to 1.</para>
         /// </summary>
-        /// <param name="position"> Vector3 position of the tile </param>
-        /// <param name="value"> float from 0 to 1 </param>
+
         private void SpawnTile(Vector2 position, float value) 
         {
             //Move each tile from screen's center to bottom left.
