@@ -4,11 +4,9 @@ namespace MapGenerator
 {
     public class GridManager : MonoBehaviour
     {
-
         //tile prefab to render
         [SerializeField][Tooltip("Sprites must be refenced in each scriptable theme and the spritesheet must be set to 16 pixels per unit")]
         private ScriptableTheme[] _themes;
-        [SerializeField][Tooltip("Forest, 0; Sand & Soil, 1")]
         private int _currentTheme;
         // Start is called before the first frame update
         void Start()
@@ -43,13 +41,15 @@ namespace MapGenerator
         }
 
         /// <summary>
-        /// SpawnTile instantiates a new Tile.
+        /// SpawnTile instantiates a new Tile with theme with percent of the theme.
         /// <list><em>
         /// <para name="position">position: sets position of the tile.</para>
         /// </em></list>
         /// </summary>
         private void SpawnTile(Vector2 position) 
         {
+            _currentTheme = ThemeByProbability( Random.Range(0.0f, 1.0f) );
+            
             // Instantiate tile with name.
             GameObject tile = new GameObject("x: " + position.x + ", y: " + position.y);
 
@@ -60,6 +60,21 @@ namespace MapGenerator
             // Adding the half side of the screen offset.
             position = GridWorldPosition(position);
             tile.transform.position = position;
+        }
+
+        /// <summary>
+        /// Returns the theme index if the spawn rate of each theme allows it.
+        /// <list><em>
+        /// <para name="probability">float probability: this float with range between 0 and 1 is the % that allows to spawn the theme.</para>
+        /// </em></list>
+        /// <returns name="int"><strong>Returns themes's index between 0 and _themes.Length - 1</strong></returns>
+        /// </summary>
+        private int ThemeByProbability(float probability) 
+        {
+            for (int i = _themes.Length - 1; i >= 0; i--)
+                if (_themes[i].spawnRate >= probability) return i;
+            
+            return 0;
         }
     }
 }

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ec6f7175c72f394e81f5de7afaa1c99, type: 3}
-  m_Name: Sand & Soil
+  m_Name: Sand
   m_EditorClassIdentifier: 
+  spawnRate: 0.1
   topLeft: {fileID: 806898327, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
   top: {fileID: 2029512666, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
   topRight: {fileID: 1287349726, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}

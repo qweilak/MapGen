@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec6f7175c72f394e81f5de7afaa1c99, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
+  spawnRate: 1
   topLeft: {fileID: -1292465219, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
   top: {fileID: -204754511, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
   topRight: {fileID: 889949448, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
