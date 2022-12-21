@@ -1,5 +1,5 @@
 # MapGen
-Is a personal project to procedurally generate a grid of 2D tiles by theme.
+Is a personal project to procedurally generate a grid of 2D tiles by theme. The map generated with this grid has size limits bound to the size of the screen.
 
 It has a spawn chance for each tile depending on the chance assigned to themes.
 
