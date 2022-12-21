@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec6f7175c72f394e81f5de7afaa1c99, type: 3}
+  m_Name: Sand & Soil
+  m_EditorClassIdentifier: 
+  topLeft: {fileID: 806898327, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  top: {fileID: 2029512666, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  topRight: {fileID: 1287349726, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  left: {fileID: -232976554, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  center: {fileID: -1835765564, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  right: {fileID: 1087704828, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  bottomLeft: {fileID: -1080340882, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  bottom: {fileID: -1803572465, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  bottomRight: {fileID: 745408974, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}

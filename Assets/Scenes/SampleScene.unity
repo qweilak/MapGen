@@ -236,16 +236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176ae60bb3a56fa4da4aca3d346320b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sprites:
-  - {fileID: -1292465219, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -204754511, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 889949448, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 1381443329, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -1430820830, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 593596822, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -275653300, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: -629029586, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
-  - {fileID: 842297717, guid: ab6396a06b02f8e4b827be3ffe6a2e20, type: 3}
+  _themes:
+  - {fileID: 11400000, guid: d3ed4fcef1e025e4da6403a2a5e3f13e, type: 2}
+  - {fileID: 11400000, guid: 6901f6ea2818dfd439b63791da4a78d1, type: 2}
+  _currentTheme: 0
 --- !u!4 &1285093612
 Transform:
   m_ObjectHideFlags: 0

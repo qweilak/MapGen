@@ -4,10 +4,12 @@ namespace MapGenerator
 {
     public class GridManager : MonoBehaviour
     {
-        //tile prefab to render
-        [SerializeField][Tooltip("Sprites must be refenced and the spritesheet must be set to 16 pixels per unit")]
-        private Sprite[] _sprites;
 
+        //tile prefab to render
+        [SerializeField][Tooltip("Sprites must be refenced in each scriptable theme and the spritesheet must be set to 16 pixels per unit")]
+        private ScriptableTheme[] _themes;
+        [SerializeField][Tooltip("Forest, 0; Sand & Soil, 1")]
+        private int _currentTheme;
         // Start is called before the first frame update
         void Start()
         {
@@ -53,33 +55,11 @@ namespace MapGenerator
 
             // Adding render by index from corners and limits of the map. 
             SpriteRenderer sRender = tile.AddComponent<SpriteRenderer>();
-            sRender.sprite         = _sprites[GetTileByPosition(position)];
+            sRender.sprite         = Utils.GetTileByPosition(_themes[_currentTheme],position);
 
             // Adding the half side of the screen offset.
             position = GridWorldPosition(position);
             tile.transform.position = position;
         }
-
-        /// <summary>
-        /// GetTileByPosition returns int as index of _sprites Array. Coded by the sides of the map limits.
-        /// <list><em>
-        /// <param name="pos">vector2 position: pass the tile's position in world map.</param>
-        /// </em></list>
-        /// <returns><strong>returns int between 0 and _sprites.Lenght relative to position in map.
-        /// </strong></returns>
-        /// </summary>
-        private int GetTileByPosition(Vector2 pos) 
-        {
-            if (pos.x == 0 && pos.y == 0) return 6;                                  // bottom left
-            else if (pos.x == Utils.colums - 1 && pos.y == Utils.rows - 1) return 2; // top right
-            else if (pos.x == Utils.colums - 1 && pos.y == 0) return 8;              // top left
-            else if (pos.x == 0 && pos.y == Utils.rows - 1) return 0;                // bottom right
-            else if (pos.x == 0) return 3;                                           // left line
-            else if (pos.x == Utils.colums - 1) return 5;                            // right line
-            else if (pos.y == 0) return 7;                                           // bottom line
-            else if (pos.y == Utils.rows - 1) return 1;                              // top line
-            return 4;                                                                // center
-        }
-
     }
 }
